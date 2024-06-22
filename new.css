@@ -151,6 +151,7 @@ label{
     border-radius: 30px;
     word-wrap: break-word;
     whitespace: normal;
+    width: 95%;
 }
 li{
     color: white;
