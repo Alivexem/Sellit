@@ -149,6 +149,8 @@ label{
     padding: 7px;
     border: 4px solid white;
     border-radius: 30px;
+    word-wrap: break-word;
+    whitespace: normal;
 }
 li{
     color: white;
