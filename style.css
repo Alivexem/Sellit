@@ -156,3 +156,6 @@ footer p{
     align-items: center;
     margin: 30px 0 30px 0;
 }
+footer img{
+  border-radius: 50%;
+}
