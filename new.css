@@ -41,6 +41,7 @@ footer p{
     margin: -3px;
     text-align: center;
     font-family: monospace;
+    font-size: 0.7rem;
 }
 .tokdiv{
     display: flex;
