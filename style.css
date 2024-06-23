@@ -46,7 +46,7 @@ footer{
 footer p{
     color: #000000;
     margin: -3px;
-   
+    text-align: center;
     font-family: monospace;
 }
 .tokdiv{
