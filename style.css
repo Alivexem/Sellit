@@ -34,7 +34,7 @@ p{
     line-height: 1.6;
 }
 footer{
-    height: 260px;
+    height: 240px;
     margin-top: 45px;
     
     background-color: #ffdc00;
@@ -45,7 +45,7 @@ footer{
 }
 footer p{
     color: #000000;
-
+    margin: -3px;
    
     font-family: monospace;
 }
