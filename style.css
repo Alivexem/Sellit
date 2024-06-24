@@ -95,6 +95,7 @@ footer p{
     }
 }
 
+/*
 #one {
     animation: jump 1s infinite;
 }
@@ -137,6 +138,7 @@ footer p{
 #fourteen {
     animation: jump 4s infinite;
 }
+*/
 .about{
     background-color: black;
     border-radius: 35px;
