@@ -2,8 +2,8 @@ body {
       width: 100%;
       margin: 0;
       background: linear-gradient(to bottom, #000000 30%, #1C1F24 50%);
-   
-   
+
+
     display: inline-block;
     font-family: 'Roboto', sans-serif;
         }
@@ -14,7 +14,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 40px; /* Adjust as needed for spacing between images */
-    
+
 }
 
 .center{
@@ -37,7 +37,7 @@ p{
     line-height: 1.6;
 }
 footer{
-    height: 200px;
+    height: 150px;
     margin-top: 45px;
     padding: 5px;
     background-color: #ffdc00;
@@ -60,7 +60,7 @@ footer p{
     width: 90%;
     margin: 25px 25px 0 25px;
     padding-right: 10px;
-    
+
 }
 .sel{
     display: flex;
@@ -85,7 +85,7 @@ footer p{
  #text{
      animation: micer 5.5s ease-in-out infinite;
  }*/
- 
+
  @keyframes jump {
     0%, 100% {
         transform: translateY(0);
@@ -154,8 +154,66 @@ footer p{
     width: 90%;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 30px 0;
+    margin: 30px 0 10px 0;
+}
+.row img{
+    border-radius: 50%;
 }
 footer img{
-  border-radius: 50%;
+  border-radius: 5px;
+}
+
+.surround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #575757;
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+.surround p{
+    margin: -2px;
+}
+.nextup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space- between;
+    width: 40%;
+    
+}
+.level{
+    display: flex;
+    flex-direction: column;
+    
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.rod{
+    height: 5px;
+    width: 250px;
+    background-color: #3d3d38;
+    border-radius: 10px;
+}
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: #3d3d38;
+    border-radius: 50%;
+}
+li{
+    font-family: monospace;
 }
