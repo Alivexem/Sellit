@@ -29,7 +29,7 @@ p{
 footer{
     height: 150px;
     margin-top: 45px;
-    padding: 5px;
+    padding: 5px 5px 15px 5px;
     background-color: #ffdc00;
     display: flex;
     flex-direction: column;
