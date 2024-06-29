@@ -66,7 +66,7 @@
         let rewardx = document.getElementById("rewardx")
         amountx.addEventListener("input",() => {
             rewardNow = amountx.value * 8.4
-            rewardx.innerText = rewardNow.toFixed(2)
+            rewardx.innerText = (`$${rewardNow.toFixed(2)}`)
         })
     </script>
         <form>
@@ -80,8 +80,7 @@
 
             <label for="account">Account Number/Bank ID:</label>
             <input type="text" id="account" name="account" required>
-            <label for="amount">TON Token Amount:</label>
-            <input type="number" id="amount" name="amount" step="0.01" required>
+            
 
             <input id="submit" type="submit" value="proceed">
         </form>
