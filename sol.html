@@ -30,7 +30,46 @@
     
    
      <div class="form-container">
-        <h2 style="color: #00ffff;">Sell SOL Tokens / <span style="color: #9aff40; font-family: monospace;">$132</span></h2>
+        <h2 style="color: #00ffff;">SOL Tokens / <span style="color: #9aff40; font-family: monospace;">$132</span></h2>
+
+   <div class="org">
+            <div>
+                <p style="margin-bottom: 5px;">Selling</p>
+                <div class="arr">
+                  <img class="img" style="border-radius: 50%; margin-top : -5px; border: 2px solid white;" src="images/sol.png" height="35" width="35" alt="">
+                  <p>SOL</p>
+                  </div>
+            </div>
+            <div>
+                <p>Amount</p>
+                <input type="number" id="amount" style="width: 70px; height: 10px; font-size: 1rem; font-family: monospace;" placeholder="0.00"/>
+                
+            </div>
+        </div>
+           <img class="img" id="one" style="border-radius: 50%; margin-top : -5px; border: 2px solid white;" src="images/up.png" height="25" width="25" alt="">
+        <div class="org">
+            <div>
+                <p style="margin-bottom: 5px;">Receiving</p>
+                <div class="arr">
+                  <img class="img"  style="border-radius: 50%; margin-top: -5px; border: 2px solid white;" src="images/usd.png" height="35" width="35" alt="">
+                  <p>USD</p>
+                  </div>
+            </div>
+            <div>
+                <p>To Receive</p>
+                <p id="rewardx" style="font-weight: bold;">$0</p>
+                
+            </div>
+        </div>
+         
+    <script>
+        let amountx = document.getElementById("amount")
+        let rewardx = document.getElementById("rewardx")
+        amountx.addEventListener("input",() => {
+            rewardNow = amountx.value * 132
+            rewardx.innerText = (`${rewardNow.toFixed(2)}`)
+        })
+    </script>
         <form>
             <label for="country">Country:</label>
             <input type="text" id="name" name="name" required>
