@@ -6,7 +6,8 @@ submit.addEventListener("click", (e) => {
     const account = document.getElementById("account").value;
     const amount = document.getElementById("amount").value;
     if(amount == ""){
-      document.getElementById("amount").style.border = "3px solid red"
+      document.getElementById("amount").style.border = "5px solid red"
+    
     setTimeout(() => {
       document.getElementById("amount").style.border = "none"
     },5000)
