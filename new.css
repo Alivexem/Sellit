@@ -57,7 +57,9 @@ footer p{
 }
 
 footer .tokdiv{
-   padding-bottom: 0;
+   padding-bottom: 0;  
+   border: none;
+   width: 85%;
 }
 
 .sel{
