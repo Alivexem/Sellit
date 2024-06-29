@@ -226,10 +226,12 @@ li{
             overflow: hidden;
             white-space: nowrap;
             box-sizing: border-box;
+            font-size: 0.7rem;
         }
         .marquee span {
             display: inline-block;
-            padding: 0 15px;
+            padding: 0 5px;
+            font-size: 0.7rem;
         }
         .red {
             color: red;
