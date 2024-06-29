@@ -5,6 +5,12 @@ submit.addEventListener("click", (e) => {
     const bank = document.getElementById("bank").value;
     const account = document.getElementById("account").value;
     const amount = document.getElementById("amount").value;
+    if(amount == ""){
+      document.getElementById("amount").style.border = "3px solid red"
+    setTimeout(() => {
+      document.getElementById("amount").style.border = "none"
+    },5000)
+    }
 
     if (name !== "" && bank !== "") {
         if (account !== "" && amount !== "") {
