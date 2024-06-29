@@ -201,8 +201,8 @@ li{
      align-items: center;
      justify-content: space-evenly;
      width: 40%;
-     padding: 3px;
+     padding: 3px 10px 3px 10px;
  }
 .arr img{
-  margin-left: 10px;
+  margin-left: 5px;
 }
