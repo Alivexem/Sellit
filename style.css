@@ -220,3 +220,19 @@ footer img{
 li{
     font-family: monospace;
 }
+
+.marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding: 0 15px;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
