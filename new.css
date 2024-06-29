@@ -48,9 +48,9 @@ footer p{
     flex-direction: row;
     justify-content: space-around;
     width: 95%;
-    margin: 40px 25px 0 25px;
+    margin: 40px 25px 25px 25px;
     padding-right: 10px;
-    padding-bottom: 20px;
+  
     border-style: solid;
     border-color: white;
     border-width: 0 0 2px 0;
