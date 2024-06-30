@@ -17,24 +17,78 @@
     <h1 style="text-align: center; margin-top: -3px;">Tokenomics</h1>
     </div> 
      <hr style="margin: 0; padding: 0;">
-    <div class="marquee">
-        <marquee>
-             <span style="color: gray; margin-right: -5px;"> SELLING CURRENTLY:</span>
-            <span class="green">TRX: $0.014</span>
-            <span class="red">DOGE: $0.0015</span>
-            <span class="green">TON: $8.41</span>
-             <span class="red">PEPE: $0.00003</span>
-            <span class="green">NOT: $0.017</span>
-            <span class="green">SOL: $132</span>
-             <span class="green">MATIC: $0.62</span>
-            <span class="red">BLAST: $0.05</span>
-            <span class="green">ETH: $3,502</span>
-            
-        </marquee>
+   <div style="margin-top: 10px;" class="marquee">
+    <div class="scrolling-text">
+        <span style="color: gray; margin-right: -5px;">SELLING CURRENTLY:</span>
+        <span id="trx" class="green">TRX: $0.014</span>
+        <span id="doge" class="red">DOGE: $0.0015</span>
+        <span id="ton" class="green">TON: $8.41</span>
+        <span id="pepe" class="red">PEPE: $0.00003</span>
+        <span id="not" class="green">NOT: $0.017</span>
+        <span id="sol" class="green">SOL: $132</span>
+        <span id="matic" class="green">MATIC: $0.62</span>
+        <span id="blast" class="red">BLAST: $0.05</span>
+        <span id="eth" class="green">ETH: $3,502</span>
     </div>
-    <p style="font-family: monospace; padding: 10px; margin-top: 40px; font-size: 0.8rem; margin-left: 5px; text-align: center; border: 2px solid white; border-radius: 10px;">Your go-to platform for the conversion of Cryptocurrencies into Cash. First two confirmed transactions from same IP address is FREE and won't be charged for gas, sell your tokens on our TRUSTWORTHY platform at VERY GOOD RATES.</p>
+</div>
 
-    <h4 style="color: white; text-align: center; padding: 10px; border; font-family: monospace;">WITH OVER 700,000 SATISFIED CUSTOMERS WORLDWIDE!</h4>
+<style>
+    .scrolling-text {
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+        animation: scroll 18s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(40%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+<script>
+    async function fetchCryptoPrices() {
+        const ids = {
+            'eth': 'eth-ethereum',
+            'ton': 'ton-toncoin',
+            'matic': 'matic-polygon',
+            'pepe': 'pepe-pepe',
+            'trx': 'trx-tron',
+            'sol': 'sol-solana',        
+            'not': 'not-notcoin',
+            'doge': 'doge-dogecoin'
+        };
+
+        try {
+            const promises = Object.keys(ids).map(async (key) => {
+                const response = await fetch(`https://api.coinpaprika.com/v1/tickers/${ids[key]}`);
+                const data = await response.json();
+                return { name: key, price: data.quotes.USD.price };
+            });
+
+            const prices = await Promise.all(promises);           
+            prices.forEach(crypto => {                                            
+                const element = document.getElementById(crypto.name);
+                if (element) {
+                    element.innerText = `${crypto.name.toUpperCase()}: $${crypto.price}`;
+                }
+            });
+
+        } catch (error) {
+            console.error('Error fetching cryptocurrency prices:', error);
+        }
+    }
+
+    fetchCryptoPrices();
+</script>
+    <p style="font-family: monospace; padding: 10px; margin-top: 40px; font-size: 0.8rem; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid white; border-radius: 10px;">Your go-to platform for the conversion of Cryptocurrencies into Cash. First two confirmed transactions from same IP address is FREE and won't be charged for gas, sell your tokens on our TRUSTWORTHY platform at VERY GOOD RATES.</p>
+
+    <h4 style="color: white; text-align: center; padding: 10px; border; font-family: monospace;">WITH OVER 170,000 SATISFIED CUSTOMERS WORLDWIDE!</h4>
 
 
 
@@ -177,7 +231,7 @@
     </div>
 
      <div class="about">
-      <p style="font-family: monospace; font-size: 0.8rem;"> Tokenomics is your trusted partner in token collection and cash conversion since 2021. Our mission is to simplify the process of turning your tokens into tangible value, ensuring a seamless and rewarding experience for our clients. With a dedicated team of experts and a robust platform, we guarantee secure, fast, and fair transactions every time. </p>
+      <p style="font-family: monospace; font-size: 0.8rem;"> Tokenomics is your trusted partner in token collection and cash conversion since 2023. Our mission is to simplify the process of turning your tokens into tangible value, ensuring a seamless and rewarding experience for our clients. With a dedicated team of experts and a robust platform, we guarantee secure, fast, and fair transactions every time. </p>
 
 <h3>Why choose Tokenomics?</h3>
 <ul>
@@ -192,6 +246,9 @@
 <p style="font-family: monospace; font-size: 0.8rem;">Join the countless satisfied customers who have already benefited from our services. At Tokenomics, your tokens are in trusted hands. Start your journey with us today and unlock the value of your tokens effortlessly. </p>
 
 <p style="font-family: monospace; font-size: 0.8rem;"><b style="color:red;">CAUTION:</b> Tokenomics will never ask for your wallet seed phrase or private key. These informations should be kept secret, DO NOT DISCLOSE TO ANYONE.</p>
+    </div>
+     <div class="center">
+    <a style="text-decoration: none;" href="mailto: tokenomics0@gmail.com?subject=TOKEN%20ENQUIRY"><button style="margin: 45px 10px 10px 10px; width: 280px; padding: 8px; font-weight: bold; background: pink; color: black; border-radius: 8px; border: none;">Customer Support</button> </a>
     </div>
      <div style="margin-top: 50px;" class="des">
          <div class="circle"></div>
@@ -210,7 +267,7 @@
     </div>
     </div>
 
- 
+
 
     <footer>
         <div style="margin-bottom: 10px; width: 55%;" class="tokdiv">
@@ -219,7 +276,7 @@
     </div>
         <p style="text-align: center;">Making the world smarter, happier and richer.</p>
 
-        <p style="text-align: center;"> &copy 2019 - 2024 Tokenomics. All Rights Reserved</p>
+        <p style="text-align: center;"> &copy 2023 - 2024 Tokenomics. All Rights Reserved</p>
     </footer>
 </body>
 
