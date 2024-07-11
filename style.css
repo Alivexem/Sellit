@@ -239,6 +239,7 @@ li{
         }
         .green {
             color: green;
+        }
 }
 
 @media screen and (min-width: 650px){
@@ -483,5 +484,6 @@ li{
         }
         .green {
             color: green;
+        }
 
 }
