@@ -1,3 +1,4 @@
+@media screen and (max-width: 650px){
 body {
       width: 100%;
       margin: 0;
@@ -238,3 +239,249 @@ li{
         }
         .green {
             color: green;
+}
+
+@media screen and (min-width: 650px){
+
+body {
+      width: 100%;
+      margin: 0;
+      background: linear-gradient(to bottom, #000000 30%, #1C1F24 50%);
+
+
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+        }
+
+.grid-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px; /* Adjust as needed for spacing between images */
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+h1{
+    color: #555DEE;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2em; /* Adjust size as needed */
+}
+h2{
+   font-size: 1.9em;
+}
+p{
+    color: white;
+    padding: 5px;
+    line-height: 1.6;
+}
+footer{
+    height: 150px;
+    margin-top: 45px;
+    padding: 5px;
+    background-color: #ffdc00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #000000;
+    margin: -3px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.7rem;
+}
+.tokdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 72%;
+    margin: 25px 25px 0 25px;
+    padding-right: 10px;
+
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ @Keyframes micer{
+    0%{
+         transform: scale(1)
+    }
+    50%{
+         transform: scale(1.5)
+    }
+    100%{
+         transform: scale(1)
+    }
+ }
+ /*#icon{
+     animation: micer 4.5s ease-in-out infinite;
+ }
+ #text{
+     animation: micer 5.5s ease-in-out infinite;
+ }*/
+
+ @keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the jump height as needed */
+    }
+}
+
+/*
+#one {
+    animation: jump 1s infinite;
+}
+#two {
+    animation: jump 1.5s infinite;
+}
+#three {
+    animation: jump 2s infinite;
+}
+#four {
+    animation: jump 2.5s infinite;
+}
+#five {
+    animation: jump 3s infinite;
+}
+#six {
+    animation: jump 3.5s infinite;
+}
+#seven {
+    animation: jump 4s infinite;
+}
+#eight {
+    animation: jump 4.5s infinite;
+}
+#nine {
+    animation: jump 1.5s infinite;
+}
+#ten {
+    animation: jump 2s infinite;
+}
+#eleven {
+    animation: jump 2.5s infinite;
+}
+#twelve {
+    animation: jump 3s infinite;
+}
+#thirteen {
+    animation: jump 3.5s infinite;
+}
+#fourteen {
+    animation: jump 4s infinite;
+}
+*/
+.about{
+    background-color: black;
+    border-radius: 35px;
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    margin: 20px 5px 20px 5px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+.row img{
+    border-radius: 50%;
+}
+footer img{
+  border-radius: 5px;
+}
+
+.surround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #575757;
+    height: 60px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+.surround p{
+    margin: -2px;
+}
+.nextup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space- between;
+    width: 40%;
+
+}
+.level{
+    display: flex;
+    flex-direction: column;
+
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.rod{
+    height: 5px;
+    width: 250px;
+    background-color: #3d3d38;
+    border-radius: 10px;
+}
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: #3d3d38;
+    border-radius: 50%;
+}
+li{
+    font-family: monospace;
+}
+
+.marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-size: 0.7rem;
+        }
+        .marquee span {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 0.7rem;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+
+}
