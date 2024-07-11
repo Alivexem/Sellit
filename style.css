@@ -170,7 +170,7 @@ footer img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 320px;
     background-color: #575757;
     height: 60px;
     padding: 10px 20px 10px 20px;
@@ -419,7 +419,7 @@ footer img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 650px;
     background-color: #575757;
     height: 60px;
     padding: 10px 20px 10px 20px;
