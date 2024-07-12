@@ -400,7 +400,7 @@ footer p{
     border: 1.5px solid white;
     color: white;
     width: 700px;
-    text-align: center;
+  
     padding: 15px;
     margin: 20px 5px 20px 5px;
     font-size: 1.1rem;
@@ -410,7 +410,7 @@ footer p{
 .row{
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 30%;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 10px 0;
