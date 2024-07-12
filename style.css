@@ -244,6 +244,10 @@ li{
           opacity: 0.5;
           
         }
+        .tokfoot{
+          width: 50%;
+        }
+
 }
 
 @media screen and (min-width: 650px){
@@ -264,7 +268,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 50px; /* Adjust as needed for spacing between images */
+    gap: 70px; /* Adjust as needed for spacing between images */
 
 }
 
@@ -405,7 +409,7 @@ footer p{
 .row{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 10px 0;
@@ -497,6 +501,9 @@ li{
         }
         .text1, .text2{
           width: 700px;
+        }
+        .tokfoot{
+          width: 30%;
         }
 
 }
