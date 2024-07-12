@@ -400,7 +400,8 @@ footer p{
     border: 1.5px solid white;
     color: white;
     width: 700px;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
     margin: 20px 5px 20px 5px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -501,6 +502,7 @@ li{
         }
         .text1, .text2{
           width: 700px;
+          text-align: center;
         }
         .tokfoot{
           width: 30%;
