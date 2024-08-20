@@ -19,7 +19,7 @@ body {
 h1{
     color: #555DEE;
  
-    font-size: 2.5em; /* Adjust size as needed */
+    font-size: 2.2em; /* Adjust size as needed */
 }
 
 p{
@@ -49,7 +49,7 @@ footer p{
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 10px 25px 10px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
   
     border-style: solid;
     border-color: white;
