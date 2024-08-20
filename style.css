@@ -40,7 +40,7 @@ p{
     line-height: 1.6;
 }
 footer{
-    height: 120px;
+    height: 100px;
     margin-top: 45px;
     padding: 5px;
     background-color: #ffdc00;
@@ -52,6 +52,7 @@ footer{
 footer p{
     color: #000000;
     text-align: center;
+    line-height: 1;
     font-family: monospace;
     font-size: 0.7rem;
 }
@@ -304,6 +305,12 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.dropdown{
+    display: none;
+}
+#menu{
+    display: none;
 }
 footer p{
     color: #000000;
