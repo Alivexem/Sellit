@@ -334,17 +334,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
- @Keyframes micer{
-    0%{
-         transform: scale(1)
-    }
-    50%{
-         transform: scale(1.5)
-    }
-    100%{
-         transform: scale(1)
-    }
- }
  /*#icon{
      animation: micer 4.5s ease-in-out infinite;
  }
