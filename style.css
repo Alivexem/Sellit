@@ -17,11 +17,11 @@ body {
     gap: 40px; /* Adjust as needed for spacing between images */
 
 }
-  i{
+  #menu{
     color: white;
 
   {
-  i:active{
+  #menu:active{
    color: red;
 
   }
