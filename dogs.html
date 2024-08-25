@@ -30,7 +30,7 @@
 
     <!-- color: #9aff40 -->
      <div class="form-container">
-        <h2 style="color: #00ffff;">DOGS Tokens / <span style="color: red; font-family: monospace;">listing soon</span></h2>
+        <h2 style="color: #00ffff;">DOGS Tokens / <span style="color: #9aff40; font-family: monospace;">0.001</span></h2>
 
           <div class="org">
             <div>
@@ -66,7 +66,7 @@
         let amountx = document.getElementById("amount")
         let rewardx = document.getElementById("rewardx")
         amountx.addEventListener("input",() => {
-            rewardNow = amountx.value * 0.00
+            rewardNow = amountx.value * 0.001
             rewardx.innerText = (`$${rewardNow.toFixed(2)}`)
         })
     </script>
@@ -92,13 +92,13 @@
         </div>
     </div>
 
-  <script>
+<!--  <script>
    const buttonNow = document.getElementById("submit")
    buttonNow.style.pointerEvents = "none"
    buttonNow.style.backgroundColor = "gray"
    buttonNow.style.color = "black"
 
-  </script>
+  </script> -->
     <h2 id="processing" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">BINDING TRANSACTION TO OUR WALLET ADDRESS...</h2>
      <h2 id="running" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">RUNNING SECURITY CHECKS...</h2>
       <h2 id="generating" style="color: #2beaff; text-align: center; font-family: monospace; display: none;">GENERATING UNIQUE EXCHANGE WALLET ADDRESS...</h2>
