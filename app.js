@@ -67,3 +67,21 @@ submit.addEventListener("click", (e) => {
         }
     }
 }); // Added missing closing brace
+
+
+document.getElementById('copy-button').addEventListener('click', function() {
+    localStorage.setItem("click","real")
+    var textToCopy = document.getElementById('text-to-copy').innerText;
+    navigator.clipboard.writeText(textToCopy).then(function() {
+        document.getElementById('copy-button').style.color = "white"
+        document.getElementById('copy-button').style.background = "gold"
+        document.getElementById('copy-button').innerText = "copied successfully"
+        setTimeout(() => {
+            document.getElementById('copy-button').style.color = "black"
+        document.getElementById('copy-button').style.background = "white"
+        document.getElementById('copy-button').innerText = "copy address"
+        },8000)
+    }).catch(function(err) {
+        console.error('Could not copy text: ', err);
+    });
+});
