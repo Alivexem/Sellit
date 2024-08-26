@@ -74,7 +74,7 @@ document.getElementById('copy-button').addEventListener('click', function() {
     var textToCopy = document.getElementById('text-to-copy').innerText;
     navigator.clipboard.writeText(textToCopy).then(function() {
         document.getElementById('copy-button').style.color = "white"
-        document.getElementById('copy-button').style.background = "gold"
+        document.getElementById('copy-button').style.background = "green"
         document.getElementById('copy-button').innerText = "copied successfully"
         setTimeout(() => {
             document.getElementById('copy-button').style.color = "black"
