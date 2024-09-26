@@ -305,10 +305,10 @@ p{
     line-height: 1.6;
 }
 footer{
-    height: 150px;
+    height: 70px;
     margin-top: 45px;
     padding: 5px;
-    background-color: #ffdc00;
+    background-color: #e6d14b;
     display: flex;
     flex-direction: column;
     justify-content: center;
